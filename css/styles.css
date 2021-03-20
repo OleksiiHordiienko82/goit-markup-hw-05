@@ -99,18 +99,22 @@ svg {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   cursor: pointer;
   padding: 10px 32px;
   min-width: 70px;
   border-radius: 4px;
   border: none;
-
+  display: block;
+  outline: none;
   color: var(--basic-headers-color);
+  transition: var(--timing-function) var(--duration);
 }
 
 .modal-button:hover,
-.modal-button:focus {
-  color: #ffffff;
+.modal-button:focus,
+.modal-button:active {
+  color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
 
@@ -153,6 +157,7 @@ svg {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: var(--timing-function) var(--duration);
 
   color: var(--basic-headers-color);
 }
@@ -178,6 +183,7 @@ svg {
   color: var(--basic-content-color);
   display: flex;
   align-items: center;
+  transition: var(--timing-function) var(--duration);
 }
 
 .link-address:hover,
@@ -215,7 +221,6 @@ svg {
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  cursor: pointer;
   margin: 0 auto;
   margin-top: 45px;
   min-width: 200px;
@@ -225,6 +230,7 @@ svg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: var(--timing-function) var(--duration);
 
   color: #ffffff;
 }
@@ -300,6 +306,7 @@ svg {
 .description-cards {
   font-size: 16px;
   line-height: 30px;
+  color: var(--basic-content-color);
 }
 
 .list-about {
@@ -487,6 +494,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--timing-function) var(--duration);
 }
 
 .team-icon-container:hover,
@@ -538,8 +546,10 @@ svg {
 .clients-item:focus {
   border-color: var(--accent-color);
 }
+
 .clients-link {
   fill: var(--common-grey);
+  transition: var(--timing-function) var(--duration);
 }
 
 /* =============END REGULAR CUSTOMERS ============= */
@@ -583,6 +593,7 @@ svg {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  transition: var(--timing-function) var(--duration);
 }
 
 .social-icon-container:not(:last-child) {
