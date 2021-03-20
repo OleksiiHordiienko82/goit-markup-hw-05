@@ -12,7 +12,7 @@
   --section-pb: 94px;
   --common-grey: #afb1b8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration: 250ms;
+  --duration: 3500ms;
 }
 
 body {
@@ -108,7 +108,8 @@ svg {
   display: block;
   outline: none;
   color: var(--basic-headers-color);
-  transition: var(--timing-function) var(--duration);
+  transition: color var(--timing-function) var(--duration),
+    background-color var(--timing-function) var(--duration);
 }
 
 .modal-button:hover,
@@ -230,7 +231,8 @@ svg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: var(--timing-function) var(--duration);
+  transition: color var(--timing-function) var(--duration),
+    background-color var(--timing-function) var(--duration);
 
   color: #ffffff;
 }
@@ -479,6 +481,7 @@ svg {
 
 .team-icon-container-img use {
   fill: var(--common-grey);
+  transition: fill var(--timing-function) var(--duration);
 }
 
 .team-icon-container:hover .team-icon-container-img use {
@@ -602,6 +605,7 @@ svg {
 
 .social-icon-container-img use {
   fill: var(--primary-background-color);
+  transition: fill var(--timing-function) var(--duration);
 }
 
 .social-icon-container:hover > svg > use {
