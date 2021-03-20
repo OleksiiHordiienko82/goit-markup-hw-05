@@ -670,4 +670,20 @@ svg {
   border-radius: 4px;
 }
 
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /*background: url(./images/sprite.svg#icon-close-black-1), #fff;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 /* =============END WINDOWS ============= */
