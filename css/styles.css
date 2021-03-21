@@ -167,6 +167,22 @@ svg {
   margin-right: 50px;
 }
 
+.navigation-item .active-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  margin-top: 30px;
+  left: 0;
+}
+
+.navigation-item .active-link {
+  position: relative;
+}
+
 .active-link {
   color: var(--accent-color);
 }
@@ -654,6 +670,7 @@ svg {
   top: 0px;
 
   background: rgba(0, 0, 0, 0.2);
+  transition: var(--timing-function) var(--duration);
 }
 
 .modal {
