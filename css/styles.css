@@ -674,16 +674,25 @@ svg {
   position: absolute;
   top: 8px;
   right: 8px;
-  border: none;
-  outline: none;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /*background: url(./images/sprite.svg#icon-close-black-1), #fff;*/
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  background: var(--primary-background-color);
+}
+
+.modal-icon-container-img use {
+  fill: #000000;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* =============END WINDOWS ============= */
